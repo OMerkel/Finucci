@@ -1,0 +1,169 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="2920" viewBox="0 0 1120 2920">
+    <rect width="1120" height="2920" fill="#f6efdf"/>
+    <text x="560" y="52" text-anchor="middle" font-size="32" font-family="Georgia, Times New Roman, serif" letter-spacing="4" fill="#4e3723">CARTE DA GIOCO ITALIANE</text>
+    <text x="560" y="82" text-anchor="middle" font-size="15" font-family="Georgia, Times New Roman, serif" fill="#715740">Traditional-style 40-card SVG deck preview</text>
+  <g transform="translate(76 96)">
+    <image href="denari_asso.svg" x="0" y="0" width="180" height="288"/>
+        <text x="90" y="302" text-anchor="middle" font-size="14" font-family="Georgia, Times New Roman, serif" fill="#3b3025">Asso di Denari</text>
+  </g>
+  <g transform="translate(280 96)">
+    <image href="denari_2.svg" x="0" y="0" width="180" height="288"/>
+        <text x="90" y="302" text-anchor="middle" font-size="14" font-family="Georgia, Times New Roman, serif" fill="#3b3025">Due di Denari</text>
+  </g>
+  <g transform="translate(484 96)">
+    <image href="denari_3.svg" x="0" y="0" width="180" height="288"/>
+        <text x="90" y="302" text-anchor="middle" font-size="14" font-family="Georgia, Times New Roman, serif" fill="#3b3025">Tre di Denari</text>
+  </g>
+  <g transform="translate(688 96)">
+    <image href="denari_4.svg" x="0" y="0" width="180" height="288"/>
+        <text x="90" y="302" text-anchor="middle" font-size="14" font-family="Georgia, Times New Roman, serif" fill="#3b3025">Quattro di Denari</text>
+  </g>
+  <g transform="translate(892 96)">
+    <image href="denari_5.svg" x="0" y="0" width="180" height="288"/>
+        <text x="90" y="302" text-anchor="middle" font-size="14" font-family="Georgia, Times New Roman, serif" fill="#3b3025">Cinque di Denari</text>
+  </g>
+  <g transform="translate(76 403)">
+    <image href="denari_6.svg" x="0" y="0" width="180" height="288"/>
+        <text x="90" y="302" text-anchor="middle" font-size="14" font-family="Georgia, Times New Roman, serif" fill="#3b3025">Sei di Denari</text>
+  </g>
+  <g transform="translate(280 403)">
+    <image href="denari_7.svg" x="0" y="0" width="180" height="288"/>
+        <text x="90" y="302" text-anchor="middle" font-size="14" font-family="Georgia, Times New Roman, serif" fill="#3b3025">Sette di Denari</text>
+  </g>
+  <g transform="translate(484 403)">
+    <image href="denari_fante.svg" x="0" y="0" width="180" height="288"/>
+        <text x="90" y="302" text-anchor="middle" font-size="14" font-family="Georgia, Times New Roman, serif" fill="#3b3025">Fante di Denari</text>
+  </g>
+  <g transform="translate(688 403)">
+    <image href="denari_cavallo.svg" x="0" y="0" width="180" height="288"/>
+        <text x="90" y="302" text-anchor="middle" font-size="14" font-family="Georgia, Times New Roman, serif" fill="#3b3025">Cavallo di Denari</text>
+  </g>
+  <g transform="translate(892 403)">
+    <image href="denari_re.svg" x="0" y="0" width="180" height="288"/>
+        <text x="90" y="302" text-anchor="middle" font-size="14" font-family="Georgia, Times New Roman, serif" fill="#3b3025">Re di Denari</text>
+  </g>
+  <g transform="translate(76 710)">
+    <image href="coppe_asso.svg" x="0" y="0" width="180" height="288"/>
+        <text x="90" y="302" text-anchor="middle" font-size="14" font-family="Georgia, Times New Roman, serif" fill="#3b3025">Asso di Coppe</text>
+  </g>
+  <g transform="translate(280 710)">
+    <image href="coppe_2.svg" x="0" y="0" width="180" height="288"/>
+        <text x="90" y="302" text-anchor="middle" font-size="14" font-family="Georgia, Times New Roman, serif" fill="#3b3025">Due di Coppe</text>
+  </g>
+  <g transform="translate(484 710)">
+    <image href="coppe_3.svg" x="0" y="0" width="180" height="288"/>
+        <text x="90" y="302" text-anchor="middle" font-size="14" font-family="Georgia, Times New Roman, serif" fill="#3b3025">Tre di Coppe</text>
+  </g>
+  <g transform="translate(688 710)">
+    <image href="coppe_4.svg" x="0" y="0" width="180" height="288"/>
+        <text x="90" y="302" text-anchor="middle" font-size="14" font-family="Georgia, Times New Roman, serif" fill="#3b3025">Quattro di Coppe</text>
+  </g>
+  <g transform="translate(892 710)">
+    <image href="coppe_5.svg" x="0" y="0" width="180" height="288"/>
+        <text x="90" y="302" text-anchor="middle" font-size="14" font-family="Georgia, Times New Roman, serif" fill="#3b3025">Cinque di Coppe</text>
+  </g>
+  <g transform="translate(76 1017)">
+    <image href="coppe_6.svg" x="0" y="0" width="180" height="288"/>
+        <text x="90" y="302" text-anchor="middle" font-size="14" font-family="Georgia, Times New Roman, serif" fill="#3b3025">Sei di Coppe</text>
+  </g>
+  <g transform="translate(280 1017)">
+    <image href="coppe_7.svg" x="0" y="0" width="180" height="288"/>
+        <text x="90" y="302" text-anchor="middle" font-size="14" font-family="Georgia, Times New Roman, serif" fill="#3b3025">Sette di Coppe</text>
+  </g>
+  <g transform="translate(484 1017)">
+    <image href="coppe_fante.svg" x="0" y="0" width="180" height="288"/>
+        <text x="90" y="302" text-anchor="middle" font-size="14" font-family="Georgia, Times New Roman, serif" fill="#3b3025">Fante di Coppe</text>
+  </g>
+  <g transform="translate(688 1017)">
+    <image href="coppe_cavallo.svg" x="0" y="0" width="180" height="288"/>
+        <text x="90" y="302" text-anchor="middle" font-size="14" font-family="Georgia, Times New Roman, serif" fill="#3b3025">Cavallo di Coppe</text>
+  </g>
+  <g transform="translate(892 1017)">
+    <image href="coppe_re.svg" x="0" y="0" width="180" height="288"/>
+        <text x="90" y="302" text-anchor="middle" font-size="14" font-family="Georgia, Times New Roman, serif" fill="#3b3025">Re di Coppe</text>
+  </g>
+  <g transform="translate(76 1324)">
+    <image href="spade_asso.svg" x="0" y="0" width="180" height="288"/>
+        <text x="90" y="302" text-anchor="middle" font-size="14" font-family="Georgia, Times New Roman, serif" fill="#3b3025">Asso di Spade</text>
+  </g>
+  <g transform="translate(280 1324)">
+    <image href="spade_2.svg" x="0" y="0" width="180" height="288"/>
+        <text x="90" y="302" text-anchor="middle" font-size="14" font-family="Georgia, Times New Roman, serif" fill="#3b3025">Due di Spade</text>
+  </g>
+  <g transform="translate(484 1324)">
+    <image href="spade_3.svg" x="0" y="0" width="180" height="288"/>
+        <text x="90" y="302" text-anchor="middle" font-size="14" font-family="Georgia, Times New Roman, serif" fill="#3b3025">Tre di Spade</text>
+  </g>
+  <g transform="translate(688 1324)">
+    <image href="spade_4.svg" x="0" y="0" width="180" height="288"/>
+        <text x="90" y="302" text-anchor="middle" font-size="14" font-family="Georgia, Times New Roman, serif" fill="#3b3025">Quattro di Spade</text>
+  </g>
+  <g transform="translate(892 1324)">
+    <image href="spade_5.svg" x="0" y="0" width="180" height="288"/>
+        <text x="90" y="302" text-anchor="middle" font-size="14" font-family="Georgia, Times New Roman, serif" fill="#3b3025">Cinque di Spade</text>
+  </g>
+  <g transform="translate(76 1631)">
+    <image href="spade_6.svg" x="0" y="0" width="180" height="288"/>
+        <text x="90" y="302" text-anchor="middle" font-size="14" font-family="Georgia, Times New Roman, serif" fill="#3b3025">Sei di Spade</text>
+  </g>
+  <g transform="translate(280 1631)">
+    <image href="spade_7.svg" x="0" y="0" width="180" height="288"/>
+        <text x="90" y="302" text-anchor="middle" font-size="14" font-family="Georgia, Times New Roman, serif" fill="#3b3025">Sette di Spade</text>
+  </g>
+  <g transform="translate(484 1631)">
+    <image href="spade_fante.svg" x="0" y="0" width="180" height="288"/>
+        <text x="90" y="302" text-anchor="middle" font-size="14" font-family="Georgia, Times New Roman, serif" fill="#3b3025">Fante di Spade</text>
+  </g>
+  <g transform="translate(688 1631)">
+    <image href="spade_cavallo.svg" x="0" y="0" width="180" height="288"/>
+        <text x="90" y="302" text-anchor="middle" font-size="14" font-family="Georgia, Times New Roman, serif" fill="#3b3025">Cavallo di Spade</text>
+  </g>
+  <g transform="translate(892 1631)">
+    <image href="spade_re.svg" x="0" y="0" width="180" height="288"/>
+        <text x="90" y="302" text-anchor="middle" font-size="14" font-family="Georgia, Times New Roman, serif" fill="#3b3025">Re di Spade</text>
+  </g>
+  <g transform="translate(76 1938)">
+    <image href="bastoni_asso.svg" x="0" y="0" width="180" height="288"/>
+        <text x="90" y="302" text-anchor="middle" font-size="14" font-family="Georgia, Times New Roman, serif" fill="#3b3025">Asso di Bastoni</text>
+  </g>
+  <g transform="translate(280 1938)">
+    <image href="bastoni_2.svg" x="0" y="0" width="180" height="288"/>
+        <text x="90" y="302" text-anchor="middle" font-size="14" font-family="Georgia, Times New Roman, serif" fill="#3b3025">Due di Bastoni</text>
+  </g>
+  <g transform="translate(484 1938)">
+    <image href="bastoni_3.svg" x="0" y="0" width="180" height="288"/>
+        <text x="90" y="302" text-anchor="middle" font-size="14" font-family="Georgia, Times New Roman, serif" fill="#3b3025">Tre di Bastoni</text>
+  </g>
+  <g transform="translate(688 1938)">
+    <image href="bastoni_4.svg" x="0" y="0" width="180" height="288"/>
+        <text x="90" y="302" text-anchor="middle" font-size="14" font-family="Georgia, Times New Roman, serif" fill="#3b3025">Quattro di Bastoni</text>
+  </g>
+  <g transform="translate(892 1938)">
+    <image href="bastoni_5.svg" x="0" y="0" width="180" height="288"/>
+        <text x="90" y="302" text-anchor="middle" font-size="14" font-family="Georgia, Times New Roman, serif" fill="#3b3025">Cinque di Bastoni</text>
+  </g>
+  <g transform="translate(76 2245)">
+    <image href="bastoni_6.svg" x="0" y="0" width="180" height="288"/>
+        <text x="90" y="302" text-anchor="middle" font-size="14" font-family="Georgia, Times New Roman, serif" fill="#3b3025">Sei di Bastoni</text>
+  </g>
+  <g transform="translate(280 2245)">
+    <image href="bastoni_7.svg" x="0" y="0" width="180" height="288"/>
+        <text x="90" y="302" text-anchor="middle" font-size="14" font-family="Georgia, Times New Roman, serif" fill="#3b3025">Sette di Bastoni</text>
+  </g>
+  <g transform="translate(484 2245)">
+    <image href="bastoni_fante.svg" x="0" y="0" width="180" height="288"/>
+        <text x="90" y="302" text-anchor="middle" font-size="14" font-family="Georgia, Times New Roman, serif" fill="#3b3025">Fante di Bastoni</text>
+  </g>
+  <g transform="translate(688 2245)">
+    <image href="bastoni_cavallo.svg" x="0" y="0" width="180" height="288"/>
+        <text x="90" y="302" text-anchor="middle" font-size="14" font-family="Georgia, Times New Roman, serif" fill="#3b3025">Cavallo di Bastoni</text>
+  </g>
+  <g transform="translate(892 2245)">
+    <image href="bastoni_re.svg" x="0" y="0" width="180" height="288"/>
+        <text x="90" y="302" text-anchor="middle" font-size="14" font-family="Georgia, Times New Roman, serif" fill="#3b3025">Re di Bastoni</text>
+  </g>
+  <g transform="translate(470 2571)">
+    <image href="carte_da_gioco_italiane_back.svg" x="0" y="0" width="180" height="288"/>
+        <text x="90" y="302" text-anchor="middle" font-size="14" font-family="Georgia, Times New Roman, serif" fill="#3b3025">Card Back</text>
+  </g>
+</svg>
