@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="750" height="1200" viewBox="0 0 750 1200" role="img" aria-labelledby="title desc">
+  <title id="title">Tre di Spade</title>
+    <desc id="desc">Traditional-style carte da gioco italiane.</desc>
+  <defs>
+    <linearGradient id="paperGradient" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fffdf6"/>
+      <stop offset="100%" stop-color="#f5eddc"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000000" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+    <rect x="13" y="13" width="724" height="1174" rx="36" fill="url(#paperGradient)"/>
+<g transform="translate(375 320) rotate(0)">
+  <path d="M 0 -133 L 19 -41.8 L 0 26.6 L -19 -41.8 Z" fill="#bdd0dc" stroke="#243746" stroke-width="5.7"/>
+  <rect x="-49.4" y="19" width="99" height="17" rx="6" fill="#436b83" stroke="#243746" stroke-width="5.7"/>
+  <rect x="-34.2" y="34.2" width="68" height="57" rx="8" fill="#d2a357" stroke="#243746" stroke-width="5.7"/>
+  <circle cy="104" r="15" fill="#436b83" stroke="#243746" stroke-width="5.7"/>
+</g>
+<g transform="translate(375 600) rotate(-45)">
+  <path d="M 0 -199.5 L 28.5 -62.7 L 0 39.9 L -28.5 -62.7 Z" fill="#bdd0dc" stroke="#243746" stroke-width="8.55"/>
+  <rect x="-74.1" y="28.5" width="148" height="26" rx="9" fill="#436b83" stroke="#243746" stroke-width="8.55"/>
+  <rect x="-51.3" y="51.3" width="103" height="86" rx="11" fill="#d2a357" stroke="#243746" stroke-width="8.55"/>
+  <circle cy="157" r="23" fill="#436b83" stroke="#243746" stroke-width="8.55"/>
+</g>
+<g transform="translate(375 880) rotate(180)">
+  <path d="M 0 -133 L 19 -41.8 L 0 26.6 L -19 -41.8 Z" fill="#bdd0dc" stroke="#243746" stroke-width="5.7"/>
+  <rect x="-49.4" y="19" width="99" height="17" rx="6" fill="#436b83" stroke="#243746" stroke-width="5.7"/>
+  <rect x="-34.2" y="34.2" width="68" height="57" rx="8" fill="#d2a357" stroke="#243746" stroke-width="5.7"/>
+  <circle cy="104" r="15" fill="#436b83" stroke="#243746" stroke-width="5.7"/>
+</g>
+    <rect x="13" y="13" width="724" height="1174" rx="36" fill="none" stroke="#2a241c" stroke-opacity="0.32" stroke-width="5"/>
+</svg>

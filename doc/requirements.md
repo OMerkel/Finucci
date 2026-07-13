@@ -167,7 +167,7 @@ possible.
 
 - **Requirement:** Captured cards (both played card and table cards) move to the
   capturing player's pile, face-down.
-- **Details:** Scopas marked by turning one card face-up or sideways for
+- **Details:** Scope marked by turning one card face-up or sideways for
   counting.
 - **Testable:** Unit test verifies captured cards removed from table and added
   to player pile; pile count increments
@@ -206,9 +206,9 @@ the table face-up.
 
 #### FR-6.2 Scopa Count
 
-- **Requirement:** Each scopa is worth 1 point; player tracks scopas
+- **Requirement:** Each scopa is worth 1 point; player tracks scope
   throughout round.
-- **Testable:** Unit test simulates multiple scopas; verify count increments
+- **Testable:** Unit test simulates multiple scope; verify count increments
   and points awarded at scoring.
 
 #### FR-6.3 No Scopa for Automatic Final Award
@@ -325,13 +325,13 @@ point.
 #### FR-8.5 Scopa Points
 
 - **Requirement:** Each scopa made during play awards 1 point.
-- **Testable:** Unit test counts scopas; verify points match scopa count.
+- **Testable:** Unit test counts scope; verify points match scopa count.
 
 #### FR-8.6 Round Scoring Summary
 
 - **Requirement:** At round end, aggregate all category points + scopa points
   for each player.
-- **Details:** Standard round max: 4 category + N scopas.
+- **Details:** Standard round max: 4 category + N scope.
 - **Testable:** Unit test simulates complete round; verify final scores
   calculated correctly.
 
@@ -346,12 +346,14 @@ point.
 - **Details:**
   - Standard target: 11 points.
   - Alternative targets (15, 21, 30) may be configured.
-  - No minimum lead is required unless a variant rule explicitly enables it.
+  - A minimum lead of 2 points is required by default.
+  - If a player reaches the target with only a 1-point lead, gameplay
+    continues until a 2-point lead is achieved.
   - If both players are tied at or above the target after round scoring,
     gameplay continues until the tie is broken.
 - **Testable:** Unit test runs multiple rounds with various scores (including
-  ties at threshold); verify win condition triggers immediately when a player
-  reaches the active target.
+  ties at threshold); verify win condition triggers only when a player reaches
+  the active target and has at least a 2-point lead.
 
 #### FR-9.2 Running Score Tracking
 
@@ -391,7 +393,7 @@ point.
 
 #### FR-11.3 House Rule: Final Card No Scopa
 
-- **Requirement:** Optional rule disabling scopas on the final card of the
+- **Requirement:** Optional rule disabling scope on the final card of the
   round must be configurable in the options UI (default off in requirements,
   default on/off in product may differ by release choice and must be documented).
 - **Testable:** Unit test with flag enabled/disabled; verify scopa behavior
@@ -454,12 +456,12 @@ configured time; verify time parameter correctly passed to AI.
 
 - **Requirement:** AI must implement a legal move strategy (heuristic-based or
   minimax-based; implementation detail).
-- **Details:** Strategy must prefer high-value captures (Scopas, Settebello
+- **Details:** Strategy must prefer high-value captures (Scope, Settebello
   (7 of Denari)) over neutral moves; must not violate forced-capture rule
   (FR-4.3).
 
 - **Testable:** Unit test with predefined board states; verify AI selects
-  optimal or near-optimal moves; verify scopas.
+  optimal or near-optimal moves; verify scope.
 
 are prioritized.
 
@@ -518,9 +520,9 @@ players.
 
 #### FR-14.2 Scopa Count Per Player
 
-- **Requirement:** Game must track total scopas made by each player throughout
+- **Requirement:** Game must track total scope made by each player throughout
   the session.
-- **Testable:** Unit test simulates rounds with scopas; verify total count
+- **Testable:** Unit test simulates rounds with scope; verify total count
   increments.
 
 #### FR-14.3 Win Rate Calculation
@@ -533,10 +535,10 @@ players.
 - **Testable:** Unit test plays multiple games with known outcomes; verify win
   rate = correct percentage.
 
-#### FR-14.4 Average Scopas Per Round
+#### FR-14.4 Average Scope Per Round
 
-- **Requirement:** Game must calculate average scopas per round for each
-  player: (total scopas) / (total rounds
+- **Requirement:** Game must calculate average scope per round for each
+  player: (total scope) / (total rounds
 
 played).
 
@@ -548,9 +550,9 @@ played).
 - **Requirement:** Statistics must be displayable after game completion or in a
   dedicated Statistics view.
 - **Details:** Minimum display fields: Player name, Total Score, Rounds Played,
-  Scopas Total, Win Rate (%), Avg
+  Scope Total, Win Rate (%), Avg
 
-Scopas/Round.
+Scope/Round.
 
 - **Testable:** Unit test verifies all statistics retrievable; display format
   consistent.
@@ -575,7 +577,7 @@ application restart simulation.
 - **Requirement:** Game must support three AI strategy algorithms, selectable
   via Options Menu:
   1. **Greedy Heuristic:** Fast, rule-based evaluation; prioritizes immediate
-     high-value moves (Scopas, Settebello (7 of Denari)).
+     high-value moves (Scope, Settebello (7 of Denari)).
   2. **Negamax with Alpha-Beta Pruning:** Medium complexity; evaluates future
      game states with pruning for performance.
   3. **MCTS (Monte Carlo Tree Search) with UCT/UCB:** Advanced; probabilistic
@@ -1106,7 +1108,7 @@ Key traceability checkpoints:
 - Handicaps: **No**. Skill handicaps such as fewer drawn cards are not
   implemented.
 - Statistics Tracking: **Yes**. Tracks per-player scores, win rate, and
-  average scopas per round.
+  average scope per round.
 - Statistics Storage: **Session-only**. No persistence to disk.
 - Move Logging: **Yes, for unit testing only**. Move history is logged to
   support test setup and replay of game situations.

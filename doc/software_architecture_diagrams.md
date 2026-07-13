@@ -95,7 +95,7 @@ classDiagram
         +scoreDenari(pile1, pile2) int
         +scoreSevenDenari(pile1, pile2) int
         +scorePrimiera(pile1, pile2, method) int
-        +countScopas(pile1, pile2) int
+        +countScope(pile1, pile2) int
     }
 
     class ScopaEngine {
@@ -303,14 +303,14 @@ flowchart TD
     CheckCaptures -->|No| FindDiscard[Find safest discard]
     FindDiscard --> ReturnDiscard[Return discard]
 
-    CheckCaptures -->|Yes| FilterScopas{Any scoring scopas?}
+    CheckCaptures -->|Yes| FilterScope{Any scoring scope?}
 
-    FilterScopas -->|Yes| Scopas[Evaluate scoring scopa moves]
-    Scopas --> ScopaPriority{Settebello (7 of Denari) in scopa?}
+    FilterScope -->|Yes| Scope[Evaluate scoring scopa moves]
+    Scope --> ScopaPriority{Settebello (7 of Denari) in scopa?}
     ScopaPriority -->|Yes| ReturnScopa7[Return Settebello (7 of Denari) scopa]
     ScopaPriority -->|No| ReturnScopa[Return highest-value scopa]
 
-    FilterScopas -->|No| Check7Denari{Can capture Settebello (7 of Denari)?}
+    FilterScope -->|No| Check7Denari{Can capture Settebello (7 of Denari)?}
 
     Check7Denari -->|Yes| Return7[Return Settebello (7 of Denari) capture]
 
@@ -419,11 +419,11 @@ flowchart TD
     PrimieraResult -->|Tie| Skip4[Skip]
     PrimieraResult -->|P2| AddP2_4[P2 plus one]
 
-    AddP1_4 --> CountScopas[Count scopas]
-    Skip4 --> CountScopas
-    AddP2_4 --> CountScopas
+    AddP1_4 --> CountScope[Count scope]
+    Skip4 --> CountScope
+    AddP2_4 --> CountScope
 
-    CountScopas --> UpdateCum[Update cumulative scores]
+    CountScope --> UpdateCum[Update cumulative scores]
     UpdateCum --> RecordStats[Record stats and winner]
     RecordStats --> End([Round Scoring Complete])
 ```

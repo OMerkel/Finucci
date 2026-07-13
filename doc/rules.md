@@ -70,7 +70,7 @@ The objective is to score points by:
 The usual game is played over several rounds until one player reaches the target
 score.
 
-Most commonly: **First to 11 points wins**.
+Most commonly: **First to at least 11 points with a 2-point lead wins**.
 
 ## Main Terms
 

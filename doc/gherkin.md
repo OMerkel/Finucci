@@ -169,15 +169,15 @@ Then isGameOver should return true
 
 Feature: Game Win Condition (FR-9.1)
 
-Given a GameState with Player 1 score 21 and Player 2 score 19
+Given a GameState with Player 1 score 11 and Player 2 score 9
 When calling isGameOver()
-Then isGameOver should return true (Player 1 wins: ≥21 points AND 2-point lead)
+Then isGameOver should return true (Player 1 wins: ≥11 points AND 2-point lead)
 
 ### Scenario: Winning Condition - Target Score Met But Insufficient Lead
 
 Feature: Game Win Condition (FR-9.1)
 
-Given a GameState with Player 1 score 21 and Player 2 score 20
+Given a GameState with Player 1 score 11 and Player 2 score 10
 When calling isGameOver()
 Then isGameOver should return false (only 1-point lead; game continues)
 
@@ -185,7 +185,7 @@ Then isGameOver should return false (only 1-point lead; game continues)
 
 Feature: Game Win Condition (FR-9.1)
 
-Given a GameState with Player 1 score 21 and Player 2 score 21
+Given a GameState with Player 1 score 11 and Player 2 score 11
 When calling isGameOver()
 Then isGameOver should return false (tied at target; game continues)
 
@@ -193,15 +193,15 @@ Then isGameOver should return false (tied at target; game continues)
 
 Feature: Game Win Condition (FR-9.1)
 
-Given a GameState with Player 1 score 25 and Player 2 score 23
+Given a GameState with Player 1 score 15 and Player 2 score 13
 When calling isGameOver()
-Then isGameOver should return true (≥21 points AND 2-point lead)
+Then isGameOver should return true (≥11 points AND 2-point lead)
 
 ### Scenario: Winning Condition - Higher Scores with Insufficient Lead
 
 Feature: Game Win Condition (FR-9.1)
 
-Given a GameState with Player 1 score 25 and Player 2 score 24
+Given a GameState with Player 1 score 15 and Player 2 score 14
 When calling isGameOver()
 Then isGameOver should return false (only 1-point lead; game continues)
 
@@ -212,22 +212,22 @@ Feature: Configurable Target Score (FR-11.1)
 Given a GameState with targetScore 15 and Player 1 score 15, Player 2 score
 13
 When calling isGameOver()
-Then isGameOver should return true (applies same 2-point lead rule to
-alternative targets)
+Then isGameOver should return true
+(applies the same 2-point lead rule to alternative targets)
 
 ### Scenario: Get Current Player
 
 Feature: Current Player Access (FR-3.1)
 
 Given a GameState with two players (p1, p2)
-When getting currentPlayer with index 0
+When retrieving currentPlayer with index 0
 Then currentPlayer should be p1
 
 ### Scenario: Custom Target Score Configuration
 
 Feature: Target Score Setting (FR-11.1)
 
-Given creating a GameState with targetScore 15
+Given a GameState is created with targetScore 15
 When retrieving targetScore
 Then targetScore should be 15
 
@@ -235,7 +235,7 @@ Then targetScore should be 15
 
 Feature: Primiera Method Selection (FR-11.2)
 
-Given creating a GameState with primieraMethod "numerical"
+Given a GameState is created with primieraMethod "numerical"
 When retrieving primieraMethod
 Then primieraMethod should be "numerical"
 
@@ -552,7 +552,7 @@ And game should proceed to scoring
 
 ### Scenario: AI Prioritizes Scopa Captures
 
-Feature: Greedy Strategy Scopa Priority (FR-15.1a, FR-12.4)
+Feature: Greedy Strategy Scopa Priority (FR-15.1, FR-15.2, FR-12.4)
 
 Given board state with scopa capture available and regular capture available
 When AI calculates move (greedy strategy)
@@ -560,7 +560,7 @@ Then AI should select scopa capture
 
 ### Scenario: AI Prioritizes Settebello
 
-Feature: Greedy Strategy Settebello Priority (FR-15.1a, FR-12.4)
+Feature: Greedy Strategy Settebello Priority (FR-15.1, FR-15.2, FR-12.4)
 
 Given board state with 7 of denari capture available and other captures
 When AI calculates move (greedy strategy)
@@ -568,7 +568,7 @@ Then AI should select 7 of denari capture
 
 ### Scenario: AI Selects Highest Value Capture
 
-Feature: Greedy Strategy Value Priority (FR-15.1a, FR-12.4)
+Feature: Greedy Strategy Value Priority (FR-15.1, FR-15.2, FR-12.4)
 
 Given board state with captures valued [5 cards], [3 cards], [2 cards]
 When AI calculates move (greedy strategy)
@@ -576,7 +576,7 @@ Then AI should select highest value capture (5 cards)
 
 ### Scenario: AI Selects Safe Discard
 
-Feature: Greedy Strategy Safe Discard (FR-15.1a, FR-12.4)
+Feature: Greedy Strategy Safe Discard (FR-15.1, FR-15.2, FR-12.4)
 
 Given board state with no valid capture and multiple discard options
 When AI calculates move (greedy strategy)
@@ -636,7 +636,7 @@ Then game triggers AI move computation
 
 ### Scenario: Perform Negamax Search
 
-Feature: Negamax Algorithm (FR-15.1b)
+Feature: Negamax Algorithm (FR-15.1, FR-15.2, FR-17.2)
 
 Given a game state with available moves
 When running negamax search at depth 3
@@ -644,7 +644,7 @@ Then search should evaluate legal moves and return best move
 
 ### Scenario: Apply Alpha-Beta Pruning
 
-Feature: Alpha-Beta Pruning (FR-15.1b)
+Feature: Alpha-Beta Pruning (FR-15.1, FR-15.2, FR-17.2)
 
 Given a game tree with alpha-beta bounds
 When searching with pruning enabled
@@ -673,7 +673,7 @@ Then longer timeout should produce stronger move (deeper search)
 
 ### Scenario: Perform MCTS Tree Search
 
-Feature: MCTS Algorithm (FR-15.1c)
+Feature: MCTS Algorithm (FR-15.1, FR-15.2, FR-17.1)
 
 Given a game state
 When running MCTS
@@ -682,7 +682,7 @@ Backpropagation cycles
 
 ### Scenario: Apply UCB1 Selection Strategy
 
-Feature: UCB1 Node Selection (FR-15.1c)
+Feature: UCB1 Node Selection (FR-15.1, FR-15.2, FR-17.1)
 
 Given MCTS tree with multiple child nodes
 When selecting next node to explore
@@ -690,7 +690,7 @@ Then selection should use UCB1 formula balancing exploitation and exploration
 
 ### Scenario: Execute Random Rollouts
 
-Feature: MCTS Simulation Rollouts (FR-15.1c)
+Feature: MCTS Simulation Rollouts (FR-15.1, FR-15.2, FR-17.1)
 
 Given configured rollout count of 1000
 When MCTS runs simulations
@@ -699,7 +699,7 @@ And statistics should accumulate from rollout results
 
 ### Scenario: Backpropagate Statistics
 
-Feature: MCTS Backpropagation (FR-15.1c)
+Feature: MCTS Backpropagation (FR-15.1, FR-15.2, FR-17.1)
 
 Given simulation result (win/loss)
 When backpropagating through tree
@@ -738,9 +738,11 @@ And file should be human-readable
 
 Feature: SGF Parsing (FR-16.1)
 
-Given an SGF file defining game situation
+Given an SGF file in the supported Scopa SGF subset
 When parsing SGF
-Then game state should be initialized with correct hand, table, and pile cards
+Then parsed data should contain correct players, hands, table cards,
+and captured piles
+And optional move history should be parsed when present
 
 ### Scenario: Track Player Statistics
 
@@ -748,8 +750,7 @@ Feature: Statistics Persistence (FR-14.1, FR-14.2)
 
 Given multiple completed rounds
 When tracking statistics
-Then cumulative scores
-and scope counts should accumulate correctly
+Then cumulative scores and Scopa counts should accumulate correctly
 
 ### Scenario: Calculate Win Rate
 
@@ -824,7 +825,7 @@ Feature: Target Score Option (FR-11.1)
 
 Given game configuration with target score 15
 When game runs
-Then game should end when player reaches 15 (not 21)
+Then game should end when a player reaches 15 with a 2-point lead
 
 ### Scenario: Select Primiera Method
 
@@ -858,7 +859,7 @@ Then exactly 500 rollout simulations should execute (not default 1000)
 
 Feature: Negamax Configuration (FR-17.2)
 
-Given configuration loaded
+Given configuration is loaded
 When negamax strategy initializes
 Then iterative deepening should use configured timeout window
 And alpha-beta pruning windows should be initialized from config

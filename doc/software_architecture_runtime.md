@@ -104,7 +104,7 @@ Award final table cards to last capturer
     ↓
 ScoringEngine.scoreRound(gameState)
     ↓
-Statistics manager records scores, scopas, winner
+Statistics manager records scores, scope, winner
     ↓
 Statistics view or panel updates
     ↓
@@ -129,7 +129,7 @@ minimum-lead variant)
     ↓
 Run rounds and scoring with resolved options
     ↓
-GameEngine evaluates win condition using targetScore and optional minimum lead
+GameEngine evaluates win condition using targetScore and minimumLead (default: 2)
     ↓
 Terminal state entered only when active profile win criteria are satisfied
 ```

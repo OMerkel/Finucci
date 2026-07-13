@@ -81,7 +81,7 @@ This document is the entry point for the split architecture set:
 The browser application is responsible for:
 
 - modeling the Italian deck and card values used by Scopa;
-- validating captures, discards, scopas, and round transitions;
+- validating captures, discards, scope, and round transitions;
 - computing round and game scores;
 - supporting human and AI-driven turns through a shared engine;
 - exporting and importing SGF-style game state data;

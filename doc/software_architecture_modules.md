@@ -111,12 +111,12 @@ get isGameOver() {
 
 **Win Condition Examples:**
 
-- Default profile (`targetScore=11`, no minimum lead): `11` to `10` is an
-  immediate win for P1.
-- If optional minimum-lead variant is enabled (`minimumLead=2`): `11` to `10`
-  continues; `12` to `10` wins.
-- Tie at or above target under minimum-lead variant (for example `11` to
-  `11`) continues until tie is broken.
+- Default profile (`targetScore=11`, `minimumLead=2`): `11` to `10` continues;
+  `12` to `10` wins.
+- Alternative target (`targetScore=15`, `minimumLead=2`): `15` to `14`
+  continues; `16` to `14` wins.
+- Tie at or above target (for example `11` to `11`) continues until tie is
+  broken.
 
 ---
 
@@ -190,7 +190,7 @@ class ScoringEngine {
   static scoreDenari(p1Pile, p2Pile)
   static scoreSevenDenari(p1Pile, p2Pile)
   static scorePrimiera(p1Pile, p2Pile, method)
-  static countScopas(p1Pile, p2Pile)
+  static countScope(p1Pile, p2Pile)
 
   static scorePrimieraPrime(pile)
   static scorePrimieraSimplified(pile)
@@ -305,7 +305,7 @@ foundation for richer strategy selection.
 
 ---
 
-#### `greedy-variants.js` - Greedy Heuristic (FR-15.1a)
+#### `greedy-variants.js` - Greedy Heuristic (FR-15.1, FR-15.2)
 
 ```javascript
 class GreedyStrategy {
@@ -317,11 +317,11 @@ class GreedyStrategy {
 ```
 
 **Responsibility**: Fast rule-based AI. Default strategy family. Implements
-FR-15.1a.
+FR-15.1 and FR-15.2.
 
 ---
 
-#### `negamax.js` - Negamax Alpha-Beta (FR-15.1b, FR-17.2)
+#### `negamax.js` - Negamax Alpha-Beta (FR-15.1, FR-15.2, FR-17.2)
 
 ```javascript
 class NegamaxStrategy {
@@ -335,11 +335,11 @@ class NegamaxStrategy {
 ```
 
 **Responsibility**: Strong AI using iterative deepening within response timeout.
-Implements FR-15.1b and FR-17.2.
+Implements FR-15.1, FR-15.2, and FR-17.2.
 
 ---
 
-#### `mcts.js` - Monte Carlo Tree Search (FR-15.1c, FR-17.1)
+#### `mcts.js` - Monte Carlo Tree Search (FR-15.1, FR-15.2, FR-17.1)
 
 ```javascript
 class MCTSStrategy {
@@ -355,7 +355,7 @@ class MCTSStrategy {
 ```
 
 **Responsibility**: Advanced probabilistic AI with configurable rollout count.
-Implements FR-15.1c and FR-17.1.
+Implements FR-15.1, FR-15.2, and FR-17.1.
 
 ---
 
