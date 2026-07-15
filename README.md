@@ -2,6 +2,8 @@
 
 Classic Italian card game Scopa. Play like the Finuccis.
 
+Facciamo un'altra partita! Dai! Ma bravo!
+
 ## Play Online
 
 - [Start game now...](https://omerkel.github.io/Finucci/javascript/html5/src/)
