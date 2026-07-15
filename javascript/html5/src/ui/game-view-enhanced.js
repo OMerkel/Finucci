@@ -253,11 +253,11 @@ export class GameView {
 
           return `
             <tr>
-              <td>${cat.label}</td>
-              <td${leftTitle}>${rawLeft}</td>
-              <td${rightTitle}>${rawRight}</td>
-              <td><strong>${cat.points[0]}</strong></td>
-              <td><strong>${cat.points[1]}</strong></td>
+              <td data-label="Category">${cat.label}</td>
+              <td data-label="${p1Label}"${leftTitle}>${rawLeft}</td>
+              <td data-label="${p2Label}"${rightTitle}>${rawRight}</td>
+              <td data-label="${p1Label} Points"><strong>${cat.points[0]}</strong></td>
+              <td data-label="${p2Label} Points"><strong>${cat.points[1]}</strong></td>
             </tr>
           `;
         })
@@ -282,11 +282,11 @@ export class GameView {
               <tbody>
                 ${rowsHtml}
                 <tr class="round-summary-total-row">
-                  <td>Round Total</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>${summary.roundPoints[0]}</td>
-                  <td>${summary.roundPoints[1]}</td>
+                  <td data-label="Category">Round Total</td>
+                  <td data-label="${p1Label}">-</td>
+                  <td data-label="${p2Label}">-</td>
+                  <td data-label="${p1Label} Points">${summary.roundPoints[0]}</td>
+                  <td data-label="${p2Label} Points">${summary.roundPoints[1]}</td>
                 </tr>
               </tbody>
             </table>
@@ -686,6 +686,91 @@ const menuStyles = `
   margin-top: 1rem;
   display: flex;
   justify-content: flex-end;
+}
+
+@media (max-width: 640px) {
+  .round-summary-overlay {
+    align-items: flex-start;
+    padding: 0.5rem;
+  }
+
+  .round-summary-panel {
+    width: 100%;
+    max-height: calc(100vh - 1rem);
+    padding: 0.875rem;
+  }
+
+  .round-summary-table-wrap {
+    overflow-x: visible;
+  }
+
+  .round-summary-table {
+    margin: 0.75rem 0 0;
+  }
+
+  .round-summary-table thead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  .round-summary-table,
+  .round-summary-table tbody,
+  .round-summary-table tr,
+  .round-summary-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .round-summary-table tr {
+    margin-bottom: 0.75rem;
+    border: 1px solid var(--color-border);
+    border-radius: 10px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.03);
+  }
+
+  .round-summary-table td {
+    display: grid;
+    grid-template-columns: minmax(110px, 44%) 1fr;
+    gap: 0.75rem;
+    padding: 0.55rem 0.75rem;
+    border-width: 0 0 1px 0;
+    text-align: left;
+    overflow-wrap: anywhere;
+  }
+
+  .round-summary-table td::before {
+    content: attr(data-label);
+    font-weight: 700;
+    opacity: 0.82;
+  }
+
+  .round-summary-table td:last-child {
+    border-bottom: 0;
+  }
+
+  .round-summary-table td strong {
+    justify-self: start;
+  }
+
+  .round-summary-total-row {
+    background: rgba(255, 255, 255, 0.06);
+  }
+
+  .round-summary-actions {
+    justify-content: stretch;
+  }
+
+  .round-summary-actions .btn {
+    width: 100%;
+  }
 }
 
 @media (max-width: 768px) {
