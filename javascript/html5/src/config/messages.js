@@ -13,7 +13,7 @@ export const GAME_MESSAGES = {
   SELECT_HAND_CARD: "Please select a card from your hand!",
   SYSTEM_ERROR_TRY_AGAIN: "An error occurred. Please try again.",
 
-  SCOPA_TOAST: "🧹 ¡Scopa! +1 point 🧹",
+  SCOPA_TOAST: "🧹 Scopa! +1 point 🧹",
 
   ROUND_COMPLETE_TOAST: "Round complete! Starting new round...",
   ROUND_COMPLETE_STATUS: "Round complete. Dealing next round...",
@@ -35,5 +35,5 @@ export const GAME_MESSAGES = {
     `Discarded ${formatCardNameItalian(handCard)} to the table.`,
   RESOLUTION_CAPTURE: (count, terms, total) =>
     `Captured ${count} card(s): table sum ${terms} = ${total}.`,
-  RESOLUTION_SCOPA_SUFFIX: " 🧹¡Scopa scored (+1)!🧹",
+  RESOLUTION_SCOPA_SUFFIX: " 🧹Scopa scored (+1)!🧹",
 };

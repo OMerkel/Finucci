@@ -17,7 +17,7 @@ describe("Game Messages", () => {
     expect(GAME_MESSAGES.INVALID_MOVE_GENERIC).toBe(
       "Invalid move. Please try again.",
     );
-    expect(GAME_MESSAGES.SCOPA_TOAST).toBe("🧹 ¡Scopa! +1 point 🧹");
+    expect(GAME_MESSAGES.SCOPA_TOAST).toBe("🧹 Scopa! +1 point 🧹");
     expect(GAME_MESSAGES.ROUND_COMPLETE_TOAST).toContain("Round complete");
   });
 
